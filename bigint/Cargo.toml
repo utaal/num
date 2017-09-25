@@ -11,6 +11,7 @@ repository = "https://github.com/rust-num/num"
 version = "0.1.40"
 
 [dependencies]
+abomonation = "0.4.6"
 
 [dependencies.num-integer]
 path = "../integer"

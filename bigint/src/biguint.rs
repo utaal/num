@@ -15,6 +15,8 @@ use std::ascii::AsciiExt;
 #[cfg(feature = "serde")]
 use serde;
 
+use abomonation::Abomonation;
+
 use integer::Integer;
 use traits::{ToPrimitive, FromPrimitive, Float, Num, Unsigned, CheckedAdd, CheckedSub, CheckedMul,
              CheckedDiv, Zero, One};
@@ -46,6 +48,8 @@ mod biguint_tests;
 pub struct BigUint {
     data: Vec<BigDigit>,
 }
+
+unsafe_abomonate!(BigUint : data);
 
 impl PartialEq for BigUint {
     #[inline]

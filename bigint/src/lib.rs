@@ -84,6 +84,8 @@ extern crate serde;
 extern crate num_integer as integer;
 extern crate num_traits as traits;
 
+#[macro_use] extern crate abomonation;
+
 use std::error::Error;
 use std::num::ParseIntError;
 use std::fmt;
